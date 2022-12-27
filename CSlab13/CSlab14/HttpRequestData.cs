@@ -8,23 +8,19 @@ using System.Net.Http.Json;
 
 namespace CSlab13
 {
-    public class AssemblyView
+    public class TaxiDepotView
     {
-        public string name { get; set; }
-        public int id { get; set; }
-        public List<PartView> PartViews { get; set; } = new List<PartView>();
+        public string Address { get; set; }
+        public int Id { get; set; }
+        public List<TaxiGroupView> TaxiGroupViews { get; set; } = new List<TaxiGroupView>();
     }
 
-    public class PartView
+    public class TaxiGroupView
     {
         public int Id { get; set; }
-
-        public int AssemblyId { get; set; }
-
-        public int DetailId { get; set; }
-
-        public string DetailName { get; set; } = null!;
-        public Detail Detail { get; set; } = null!;
+        public int TaxiDepotId { get; set; }
+        public int CarId { get; set; }
+        public Car Car { get; set; } = null!;
         public int Quantity { get; set; }
     }
 
@@ -32,52 +28,38 @@ namespace CSlab13
     {
         public static HttpClient client = new() { BaseAddress = new Uri("http://localhost:5204") };
 
-        public static Detail GetDetailFromId(int id)
+        public static Car GetCarFromId(int id)
         {
-            string url = $"http://localhost:5204/api/Detail/{id}";
+            string url = $"http://localhost:5204/api/Car/{id}";
             Task<HttpResponseMessage> request = new HttpClient().SendAsync(new HttpRequestMessage(HttpMethod.Get, url));
             Task<Stream> stream1 = request.Result.Content.ReadAsStreamAsync();
             StreamReader sr1 = new StreamReader(stream1.Result);
             string data = sr1.ReadToEnd();
-            var deserializeDetail = JsonConvert.DeserializeObject<Detail>(data);
+            var deserializeCar = JsonConvert.DeserializeObject<Car>(data);
             string ans = request.Result.StatusCode.ToString();
             Console.Write(ans);
 
-            return deserializeDetail;
+            return deserializeCar;
         }
 
-        public static Detail GetDetailFromName(string name)
+        public static List<Car> GetAllCars()
         {
-            string url = $"http://localhost:5204/api/Detail/{name}";
-            Task<HttpResponseMessage> request = new HttpClient().SendAsync(new HttpRequestMessage(HttpMethod.Get, url));
-            Task<Stream> stream1 = request.Result.Content.ReadAsStreamAsync();
-            StreamReader sr1 = new StreamReader(stream1.Result);
-            string data = sr1.ReadToEnd();
-            var deserializeDetail = JsonConvert.DeserializeObject<Detail>(data);
-            string ans = request.Result.StatusCode.ToString();
-            Console.Write(ans);
-
-            return deserializeDetail;
-        }
-
-        public static List<Detail> GetAllDetails()
-        {
-            string url = "http://localhost:5204/api/Details";
+            string url = "http://localhost:5204/api/Cars";
             Task<HttpResponseMessage> request = new HttpClient().SendAsync(new HttpRequestMessage(HttpMethod.Get, url));
             Task<Stream> stream1 = request.Result.Content.ReadAsStreamAsync();
             StreamReader sr1 = new StreamReader(stream1.Result);
             var data = sr1.ReadToEnd();
-            var deserializeListOfDetails = JsonConvert.DeserializeObject<List<Detail>>(data);
+            var deserializeListOfCars = JsonConvert.DeserializeObject<List<Car>>(data);
             string ans = request.Result.StatusCode.ToString();
             Console.WriteLine(ans);
 
-            return deserializeListOfDetails;
+            return deserializeListOfCars;
         }
 
-        public static void AddDetail(Detail temp)
+        public static void AddCar(Car temp)
         {
             // client.BaseAddress = new Uri("http://localhost:5204");
-            Task<HttpResponseMessage> request = client.PostAsJsonAsync($"api/Detail", temp);
+            Task<HttpResponseMessage> request = client.PostAsJsonAsync($"api/Car", temp);
             Task<Stream> stream1 = request.Result.Content.ReadAsStreamAsync();
             StreamReader sr1 = new StreamReader(stream1.Result);
             string data1 = sr1.ReadToEnd();
@@ -86,9 +68,9 @@ namespace CSlab13
             Console.Write(ans);
         }
 
-        public static void ChangeDetail(Detail temp)
+        public static void ChangeCar(Car temp)
         {
-            Task<HttpResponseMessage> request = client.PutAsJsonAsync($"api/Detail", temp);
+            Task<HttpResponseMessage> request = client.PutAsJsonAsync($"api/Car", temp);
             string ans = request.Result.StatusCode.ToString();
             Task<Stream> stream1 = request.Result.Content.ReadAsStreamAsync();
             StreamReader sr1 = new StreamReader(stream1.Result);
@@ -97,9 +79,9 @@ namespace CSlab13
             Console.Write(ans);
         }
 
-        public static void DeleteDetail(Detail temp)
+        public static void DeleteCar(Car temp)
         {
-            string url = $"http://localhost:5204/api/Detail/{temp.Id}";
+            string url = $"http://localhost:5204/api/Car/{temp.Id}";
             Task<HttpResponseMessage> request =
                 new HttpClient().SendAsync(new HttpRequestMessage(HttpMethod.Delete, url));
             Task<Stream> stream1 = request.Result.Content.ReadAsStreamAsync();
@@ -110,32 +92,32 @@ namespace CSlab13
             Console.Write(ans);
         }
 
-        public static Assembly GetAssemblyFromId(int id)
+        public static TaxiDepot GetTaxiDepotFromId(int id)
         {
-            string url = $"http://localhost:5204/api/Assembly/{id}";
+            string url = $"http://localhost:5204/api/TaxiDepot/{id}";
             Task<HttpResponseMessage> request = client.SendAsync(new HttpRequestMessage(HttpMethod.Get, url));
             Task<Stream> stream1 = request.Result.Content.ReadAsStreamAsync();
             StreamReader sr1 = new StreamReader(stream1.Result);
             string data = sr1.ReadToEnd();
-            var deserializeAssemblyView = JsonConvert.DeserializeObject<AssemblyView>(data);
-            Assembly temp = new Assembly() { Id = deserializeAssemblyView.id, Name = deserializeAssemblyView.name };
-            List<Part> tempParts = new List<Part>();
-            foreach (var VARIABLE in deserializeAssemblyView.PartViews)
+            var deserializeTaxiDepotView = JsonConvert.DeserializeObject<TaxiDepotView>(data);
+            TaxiDepot temp = new TaxiDepot() { Id = deserializeTaxiDepotView.Id, Address = deserializeTaxiDepotView.Address };
+            List<TaxiGroup> tempTaxiGroups = new List<TaxiGroup>();
+            foreach (var VARIABLE in deserializeTaxiDepotView.TaxiGroupViews)
             {
-                Part part = new Part()
+                TaxiGroup taxiGroup = new TaxiGroup()
                 {
                     Id = VARIABLE.Id,
-                    AssemblyId = temp.Id,
-                    Assembly = temp,
+                    TaxiDepotId = temp.Id,
+                    TaxiDepot = temp,
                     Quantity = VARIABLE.Quantity,
                     // DetailName = VARIABLE.DetailName, /////////////////////////////////////////////////////////////
-                    DetailId = VARIABLE.DetailId,
-                    Detail = VARIABLE.Detail
+                    CarId = VARIABLE.CarId,
+                    Car = VARIABLE.Car
                 };
-                tempParts.Add(part);
+                tempTaxiGroups.Add(taxiGroup);
             }
 
-            temp.Parts = tempParts;
+            temp.TaxiGroups = tempTaxiGroups;
 
             string ans = request.Result.StatusCode.ToString();
             Console.Write(ans);
@@ -144,70 +126,38 @@ namespace CSlab13
             return temp;
         }
 
-        public static Assembly GetAssemblyFromName(string name)
+        public static List<TaxiDepot> GetAllTaxiDepots()
         {
-            string url = $"http://localhost:5204/api/Assembly/{name}";
-            Task<HttpResponseMessage> request = client.SendAsync(new HttpRequestMessage(HttpMethod.Get, url));
-            Task<Stream> stream1 = request.Result.Content.ReadAsStreamAsync();
-            StreamReader sr1 = new StreamReader(stream1.Result);
-            string data = sr1.ReadToEnd();
-            var deserializeAssemblyView = JsonConvert.DeserializeObject<AssemblyView>(data);
-            Assembly temp = new Assembly() { Id = deserializeAssemblyView.id, Name = deserializeAssemblyView.name };
-            List<Part> tempParts = new List<Part>();
-            foreach (var VARIABLE in deserializeAssemblyView.PartViews)
-            {
-                Part part = new Part()
-                {
-                    Id = VARIABLE.Id,
-                    Assembly = temp,
-                    AssemblyId = temp.Id,
-                    Quantity = VARIABLE.Quantity,
-                    // DetailName = VARIABLE.DetailName, /////////////////////////////////////////////////////////////
-                    DetailId = VARIABLE.DetailId,
-                    Detail = VARIABLE.Detail
-                };
-                tempParts.Add(part);
-            }
-
-            temp.Parts = tempParts;
-
-            string ans = request.Result.StatusCode.ToString();
-            Console.Write(ans);
-            return temp;
-        }
-
-        public static List<Assembly> GetAllAssemblies()
-        {
-            string url = "http://localhost:5204/api/Assemblies";
+            string url = "http://localhost:5204/api/TaxiDepots";
             Task<HttpResponseMessage> request = new HttpClient().SendAsync(new HttpRequestMessage(HttpMethod.Get, url));
             Task<Stream> stream1 = request.Result.Content.ReadAsStreamAsync();
             StreamReader sr1 = new StreamReader(stream1.Result);
             string data = sr1.ReadToEnd();
             Console.WriteLine(data);
-            var deserializeListAssembliesView = JsonConvert.DeserializeObject<List<AssemblyView>>(data);
-            if (deserializeListAssembliesView == null)
-                return new List<Assembly>();
-            List<Assembly> list = new List<Assembly>();
-            foreach (var assemblyView in deserializeListAssembliesView)
+            var deserializeListTaxiDepotsView = JsonConvert.DeserializeObject<List<TaxiDepotView>>(data);
+            if (deserializeListTaxiDepotsView == null)
+                return new List<TaxiDepot>();
+            List<TaxiDepot> list = new List<TaxiDepot>();
+            foreach (var taxiDepotView in deserializeListTaxiDepotsView)
             {
-                Assembly temp = new Assembly() { Id = assemblyView.id, Name = assemblyView.name };
-                List<Part> tempParts = new List<Part>();
-                foreach (var VARIABLE in assemblyView.PartViews)
+                TaxiDepot temp = new TaxiDepot() { Id = taxiDepotView.Id, Address = taxiDepotView.Address };
+                List<TaxiGroup> tempTaxiGroups = new List<TaxiGroup>();
+                foreach (var VARIABLE in taxiDepotView.TaxiGroupViews)
                 {
-                    Part part = new Part()
+                    TaxiGroup taxiGroup = new TaxiGroup()
                     {
                         Id = VARIABLE.Id,
-                        Assembly = temp,
-                        AssemblyId = temp.Id,
+                        TaxiDepot = temp,
+                        TaxiDepotId = temp.Id,
                         Quantity = VARIABLE.Quantity,
                         // DetailName = VARIABLE.DetailName, /////////////////////////////////////////////////////////////
-                        DetailId = VARIABLE.DetailId,
-                        Detail = VARIABLE.Detail
+                        CarId = VARIABLE.CarId,
+                        Car = VARIABLE.Car
                     };
-                    tempParts.Add(part);
+                    tempTaxiGroups.Add(taxiGroup);
                 }
 
-                temp.Parts = tempParts;
+                temp.TaxiGroups = tempTaxiGroups;
                 list.Add(temp);
             }
 
@@ -216,33 +166,32 @@ namespace CSlab13
             return list;
         }
 
-        public static void AddAssembly(Assembly assembly)
+        public static void AddTaxiDepot(TaxiDepot taxiDepot)
         {
-            List<Part> parts = assembly.Parts;
-            List<PartView> partViews = new List<PartView>();
-            for (int i = 0; i < parts.Count; i++)
+            List<TaxiGroup> taxiGroups = taxiDepot.TaxiGroups;
+            List<TaxiGroupView> taxigroupViews = new List<TaxiGroupView>();
+            for (int i = 0; i < taxiGroups.Count; i++)
             {
-                PartView partView = new PartView()
+                TaxiGroupView taxiGroupView = new TaxiGroupView()
                 {
-                    AssemblyId = parts[i].AssemblyId,
-                    Detail = parts[i].Detail,
-                    Id = parts[i].Id,
-                    Quantity = parts[i].Quantity,
-                    DetailId = parts[i].DetailId,
-                    DetailName = parts[i].Detail.Name
+                    TaxiDepotId = taxiGroups[i].TaxiDepotId,
+                    Car = taxiGroups[i].Car,
+                    Id = taxiGroups[i].Id,
+                    Quantity = taxiGroups[i].Quantity,
+                    CarId = taxiGroups[i].CarId,
                 };
-                partViews.Add(partView);
+                taxigroupViews.Add(taxiGroupView);
             }
 
-            AssemblyView temp = new AssemblyView()
+            TaxiDepotView temp = new TaxiDepotView()
             {
-                id = assembly.Id,
-                name = assembly.Name,
-                PartViews = partViews
+                Id = taxiDepot.Id,
+                Address = taxiDepot.Address,
+                TaxiGroupViews = taxigroupViews
             };
 
             Task<HttpResponseMessage> request = client.PostAsJsonAsync(
-                $"api/Assembly", temp);
+                $"api/TaxiDepot", temp);
             Task<Stream> stream1 = request.Result.Content.ReadAsStreamAsync();
             StreamReader sr1 = new StreamReader(stream1.Result);
             string data1 = sr1.ReadToEnd();
@@ -251,33 +200,32 @@ namespace CSlab13
             Console.Write(ans);
         }
 
-        public static void ChangeAssembly(Assembly assembly)
+        public static void ChangeTaxiDepot(TaxiDepot taxiDepot)
         {
-            List<Part> parts = assembly.Parts;
-            List<PartView> partViews = new List<PartView>();
-            for (int i = 0; i < parts.Count; i++)
+            List<TaxiGroup> taxiGroups = taxiDepot.TaxiGroups;
+            List<TaxiGroupView> taxiGroupViews = new List<TaxiGroupView>();
+            for (int i = 0; i < taxiGroups.Count; i++)
             {
-                PartView partView = new PartView()
+                TaxiGroupView taxiGroupView = new TaxiGroupView()
                 {
-                    AssemblyId = parts[i].AssemblyId,
-                    Detail = parts[i].Detail,
-                    Id = parts[i].Id,
-                    Quantity = parts[i].Quantity,
-                    DetailId = parts[i].DetailId,
-                    DetailName = parts[i].Detail.Name
+                    TaxiDepotId = taxiGroups[i].TaxiDepotId,
+                    Car = taxiGroups[i].Car,
+                    Id = taxiGroups[i].Id,
+                    Quantity = taxiGroups[i].Quantity,
+                    CarId = taxiGroups[i].CarId,
                 };
-                partViews.Add(partView);
+                taxiGroupViews.Add(taxiGroupView);
             }
 
-            AssemblyView temp = new AssemblyView()
+            TaxiDepotView temp = new TaxiDepotView()
             {
-                id = assembly.Id,
-                name = assembly.Name,
-                PartViews = partViews
+                Id = taxiDepot.Id,
+                Address = taxiDepot.Address,
+                TaxiGroupViews = taxiGroupViews
             };
 
             Task<HttpResponseMessage> request = client.PutAsJsonAsync(
-                $"api/Assembly", temp);
+                $"api/TaxiDepot", temp);
             Task<Stream> stream1 = request.Result.Content.ReadAsStreamAsync();
             StreamReader sr1 = new StreamReader(stream1.Result);
             string data1 = sr1.ReadToEnd();
@@ -286,9 +234,9 @@ namespace CSlab13
             Console.Write(ans);
         }
 
-        public static void DeleteAssembly(Assembly assembly)
+        public static void DeleteTaxiDepot(TaxiDepot taxiDepot)
         {
-            string url = $"http://localhost:5204/api/Assembly/{assembly.Id}";
+            string url = $"http://localhost:5204/api/TaxiDepot/{taxiDepot.Id}";
             Task<HttpResponseMessage> request =
                 new HttpClient().SendAsync(new HttpRequestMessage(HttpMethod.Delete, url));
             Task<Stream> stream1 = request.Result.Content.ReadAsStreamAsync();

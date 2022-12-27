@@ -6,9 +6,9 @@
             BarBackgroundColor="Gray"
             SelectedTabColor="DimGray"
             UnselectedTabColor="DarkGray"
-            Title="Производство">
+            Title="ИП Димасик">
     <TabbedPage.Children>
-        <local:ListAssembliesPage />
-        <local:ListDetailsPage/>
+        <local:ListTaxiDepotsPage />
+        <local:ListCarsPage/>
     </TabbedPage.Children>
 </TabbedPage>

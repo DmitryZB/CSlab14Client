@@ -4526,20 +4526,20 @@
     ]
   },
   "packageFolders": {
-    "/Users/oldmash/.nuget/packages/": {}
+    "/Users/dimon/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/oldmash/RiderProjects/labsC#/CSlab14ClientTelitsynIvan/CSlab13/CSlab13.Droid/CSlab13.Droid.csproj",
+      "projectUniqueName": "/Users/dimon/Desktop/PROGRAMMING/C#/lab14/CSlab13/CSlab13.Droid/CSlab13.Droid.csproj",
       "projectName": "CSlab13.Droid.csproj",
-      "projectPath": "/Users/oldmash/RiderProjects/labsC#/CSlab14ClientTelitsynIvan/CSlab13/CSlab13.Droid/CSlab13.Droid.csproj",
-      "packagesPath": "/Users/oldmash/.nuget/packages/",
-      "outputPath": "/Users/oldmash/RiderProjects/labsC#/CSlab14ClientTelitsynIvan/CSlab13/CSlab13.Droid/obj/",
+      "projectPath": "/Users/dimon/Desktop/PROGRAMMING/C#/lab14/CSlab13/CSlab13.Droid/CSlab13.Droid.csproj",
+      "packagesPath": "/Users/dimon/.nuget/packages/",
+      "outputPath": "/Users/dimon/Desktop/PROGRAMMING/C#/lab14/CSlab13/CSlab13.Droid/obj/",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
-        "/Users/oldmash/.nuget/NuGet/NuGet.Config"
+        "/Users/dimon/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "monoandroid12.0"
@@ -4550,8 +4550,8 @@
       "frameworks": {
         "monoandroid12.0": {
           "projectReferences": {
-            "/Users/oldmash/RiderProjects/labsC#/CSlab14ClientTelitsynIvan/CSlab13/CSlab14/CSlab14.csproj": {
-              "projectPath": "/Users/oldmash/RiderProjects/labsC#/CSlab14ClientTelitsynIvan/CSlab13/CSlab14/CSlab14.csproj"
+            "/Users/dimon/Desktop/PROGRAMMING/C#/lab14/CSlab13/CSlab14/CSlab14.csproj": {
+              "projectPath": "/Users/dimon/Desktop/PROGRAMMING/C#/lab14/CSlab13/CSlab14/CSlab14.csproj"
             }
           }
         }

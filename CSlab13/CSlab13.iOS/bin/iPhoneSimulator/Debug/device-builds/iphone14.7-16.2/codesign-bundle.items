@@ -12,7 +12,7 @@
       <CodesignDisableTimestamp>true</CodesignDisableTimestamp>
       <CodesignKeychain></CodesignKeychain>
       <CodesignUseHardenedRuntime></CodesignUseHardenedRuntime>
-      <SourceProjectPath>/Users/oldmash/RiderProjects/labsC#/CSlab14ClientTelitsynIvan/CSlab13/CSlab13.iOS</SourceProjectPath>
+      <SourceProjectPath>/Users/dimon/Desktop/PROGRAMMING/C#/lab14/CSlab13/CSlab13.iOS</SourceProjectPath>
     </_CodesignBundle>
   </ItemGroup>
 </Project>

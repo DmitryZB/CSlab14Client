@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CSlab13.TaxiDepotPage" Title="Информация о Таксопарке">
+    <StackLayout Padding="15">
+        <Label Text="Адрес Таксопарка" />
+        <Entry Text="{Binding Address}" 
+               Placeholder="Введите адрес" 
+               PlaceholderColor="LightGray"/>
+        <Label Text="Список Машин" />
+        <!-- <ScrollView> -->
+            <ListView x:Name="ListTaxiGroupsInTaxiDepot" >
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <ViewCell.ContextActions>
+                                <MenuItem Text="Edit"
+                                          CommandParameter="{Binding Car.Name}"
+                                          Clicked="EditTaxiGroup"/>
+                                <MenuItem Text="Delete"
+                                          CommandParameter="{Binding Car.Name}"
+                                          Clicked="DeleteTaxiGroup"/>
+                            </ViewCell.ContextActions>
+                            <ViewCell.View>
+                                <StackLayout Orientation="Horizontal" >
+                                    <StackLayout Orientation="Horizontal" 
+                                                 VerticalOptions="Center" 
+                                                 HorizontalOptions="StartAndExpand"
+                                                 Margin="20,0,20,0">
+                                        <Label Text="{Binding Car.Name}" 
+                                               FontSize="Medium" />
+                                        <Label Text="{Binding SitCounter}" 
+                                               FontSize="Medium" />
+                                    </StackLayout>
+                                </StackLayout>
+                            </ViewCell.View>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        <!-- </ScrollView> -->
+        <Frame BackgroundColor="#c7c5c5" 
+               Margin="10,5,0,10" 
+               Padding="10, 5, 10,5"
+               CornerRadius="10">
+            <Button Text="Добавить Машину" Clicked="AddTaxiGroup" TextColor="DimGray" FontSize="15"/>
+        </Frame>
+        
+        <StackLayout Orientation="Horizontal"
+                     Margin="0,0,0,10"
+                     HorizontalOptions="Center">
+            <Frame BackgroundColor="#c7c5c5" 
+                   Margin="0,10,0,0" 
+                   Padding="10, 5, 10,5"
+                   CornerRadius="10">
+                <Button Text="Сохранить" Clicked="SaveTaxiDepot" TextColor="DimGray" FontSize="15"/>
+            </Frame>
+            <Frame BackgroundColor="#c7c5c5" 
+                   Margin="15,10,0,0" 
+                   Padding="10, 5, 10,5"
+                   CornerRadius="10">
+                <Button Text="Удалить" Clicked="DeleteTaxiDepot" TextColor="DimGray" FontSize="15"/>
+            </Frame>
+        </StackLayout>
+    </StackLayout>
+</ContentPage>
