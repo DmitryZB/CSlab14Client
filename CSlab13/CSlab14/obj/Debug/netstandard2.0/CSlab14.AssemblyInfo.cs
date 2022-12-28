@@ -11,12 +11,12 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("CSlab14")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("CSlab13")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
-[assembly: System.Reflection.AssemblyProductAttribute("CSlab14")]
-[assembly: System.Reflection.AssemblyTitleAttribute("CSlab14")]
+[assembly: System.Reflection.AssemblyProductAttribute("CSlab13")]
+[assembly: System.Reflection.AssemblyTitleAttribute("CSlab13")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 
 // Создано классом WriteCodeFragment MSBuild.

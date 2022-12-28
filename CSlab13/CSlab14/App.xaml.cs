@@ -8,7 +8,6 @@ namespace CSlab13
 {
     public partial class App : Application
     {
-        public const string DBFILENAME = "lab13.db";
         public App()
         {
             InitializeComponent();

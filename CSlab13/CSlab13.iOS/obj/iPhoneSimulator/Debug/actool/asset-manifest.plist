@@ -6,7 +6,7 @@
 	<dict>
 		<key>output-files</key>
 		<array>
-			<string>/Users/oldmash/RiderProjects/labsC#/CSlab14ClientTelitsynIvan/CSlab13/CSlab13.iOS/obj/iPhoneSimulator/Debug/actool/partial-info.plist</string>
+			<string>/Users/oldmash/RiderProjects/labsC#/DimaClient/CSlab13/CSlab13.iOS/obj/iPhoneSimulator/Debug/actool/partial-info.plist</string>
 		</array>
 	</dict>
 	<key>com.apple.actool.document.warnings</key>
@@ -14,178 +14,10 @@
 		<dict>
 			<key>affected-items</key>
 			<array>
-				<string>./AppIcon.appiconset/[][ipad][20x20][][][2x][][][]</string>
-			</array>
-			<key>catalog</key>
-			<string>/Users/oldmash/RiderProjects/labsC#/CSlab14ClientTelitsynIvan/CSlab13/CSlab13.iOS/obj/iPhoneSimulator/Debug/actool/cloned-assets/Assets.xcassets</string>
-			<key>message</key>
-			<string>The file "Icon40.png" for the image set "AppIcon" does not exist.</string>
-			<key>type</key>
-			<string>Missing Content</string>
-		</dict>
-		<dict>
-			<key>affected-items</key>
-			<array>
-				<string>./AppIcon.appiconset/[][ipad][29x29][][][1x][][][]</string>
-			</array>
-			<key>catalog</key>
-			<string>/Users/oldmash/RiderProjects/labsC#/CSlab14ClientTelitsynIvan/CSlab13/CSlab13.iOS/obj/iPhoneSimulator/Debug/actool/cloned-assets/Assets.xcassets</string>
-			<key>message</key>
-			<string>The file "Icon29.png" for the image set "AppIcon" does not exist.</string>
-			<key>type</key>
-			<string>Missing Content</string>
-		</dict>
-		<dict>
-			<key>affected-items</key>
-			<array>
-				<string>./AppIcon.appiconset/[][ipad][29x29][][][2x][][][]</string>
-			</array>
-			<key>catalog</key>
-			<string>/Users/oldmash/RiderProjects/labsC#/CSlab14ClientTelitsynIvan/CSlab13/CSlab13.iOS/obj/iPhoneSimulator/Debug/actool/cloned-assets/Assets.xcassets</string>
-			<key>message</key>
-			<string>The file "Icon58.png" for the image set "AppIcon" does not exist.</string>
-			<key>type</key>
-			<string>Missing Content</string>
-		</dict>
-		<dict>
-			<key>affected-items</key>
-			<array>
-				<string>./AppIcon.appiconset/[][ipad][40x40][][][1x][][][]</string>
-			</array>
-			<key>catalog</key>
-			<string>/Users/oldmash/RiderProjects/labsC#/CSlab14ClientTelitsynIvan/CSlab13/CSlab13.iOS/obj/iPhoneSimulator/Debug/actool/cloned-assets/Assets.xcassets</string>
-			<key>message</key>
-			<string>The file "Icon40.png" for the image set "AppIcon" does not exist.</string>
-			<key>type</key>
-			<string>Missing Content</string>
-		</dict>
-		<dict>
-			<key>affected-items</key>
-			<array>
-				<string>./AppIcon.appiconset/[][ipad][40x40][][][2x][][][]</string>
-			</array>
-			<key>catalog</key>
-			<string>/Users/oldmash/RiderProjects/labsC#/CSlab14ClientTelitsynIvan/CSlab13/CSlab13.iOS/obj/iPhoneSimulator/Debug/actool/cloned-assets/Assets.xcassets</string>
-			<key>message</key>
-			<string>The file "Icon80.png" for the image set "AppIcon" does not exist.</string>
-			<key>type</key>
-			<string>Missing Content</string>
-		</dict>
-		<dict>
-			<key>affected-items</key>
-			<array>
-				<string>./AppIcon.appiconset/[][ipad][76x76][][][1x][][][]</string>
-			</array>
-			<key>catalog</key>
-			<string>/Users/oldmash/RiderProjects/labsC#/CSlab14ClientTelitsynIvan/CSlab13/CSlab13.iOS/obj/iPhoneSimulator/Debug/actool/cloned-assets/Assets.xcassets</string>
-			<key>message</key>
-			<string>The file "Icon76.png" for the image set "AppIcon" does not exist.</string>
-			<key>type</key>
-			<string>Missing Content</string>
-		</dict>
-		<dict>
-			<key>affected-items</key>
-			<array>
-				<string>./AppIcon.appiconset/[][ipad][76x76][][][2x][][][]</string>
-			</array>
-			<key>catalog</key>
-			<string>/Users/oldmash/RiderProjects/labsC#/CSlab14ClientTelitsynIvan/CSlab13/CSlab13.iOS/obj/iPhoneSimulator/Debug/actool/cloned-assets/Assets.xcassets</string>
-			<key>message</key>
-			<string>The file "Icon152.png" for the image set "AppIcon" does not exist.</string>
-			<key>type</key>
-			<string>Missing Content</string>
-		</dict>
-		<dict>
-			<key>affected-items</key>
-			<array>
-				<string>./AppIcon.appiconset/[][ipad][83.5x83.5][][][2x][][][]</string>
-			</array>
-			<key>catalog</key>
-			<string>/Users/oldmash/RiderProjects/labsC#/CSlab14ClientTelitsynIvan/CSlab13/CSlab13.iOS/obj/iPhoneSimulator/Debug/actool/cloned-assets/Assets.xcassets</string>
-			<key>message</key>
-			<string>The file "Icon167.png" for the image set "AppIcon" does not exist.</string>
-			<key>type</key>
-			<string>Missing Content</string>
-		</dict>
-		<dict>
-			<key>affected-items</key>
-			<array>
-				<string>./AppIcon.appiconset/[][ios-marketing][1024x1024][][][1x][][][]</string>
-			</array>
-			<key>catalog</key>
-			<string>/Users/oldmash/RiderProjects/labsC#/CSlab14ClientTelitsynIvan/CSlab13/CSlab13.iOS/obj/iPhoneSimulator/Debug/actool/cloned-assets/Assets.xcassets</string>
-			<key>message</key>
-			<string>The file "Icon1024.png" for the image set "AppIcon" does not exist.</string>
-			<key>type</key>
-			<string>Missing Content</string>
-		</dict>
-		<dict>
-			<key>affected-items</key>
-			<array>
-				<string>./AppIcon.appiconset/[][iphone][20x20][][][2x][][][]</string>
-			</array>
-			<key>catalog</key>
-			<string>/Users/oldmash/RiderProjects/labsC#/CSlab14ClientTelitsynIvan/CSlab13/CSlab13.iOS/obj/iPhoneSimulator/Debug/actool/cloned-assets/Assets.xcassets</string>
-			<key>message</key>
-			<string>The file "Icon40.png" for the image set "AppIcon" does not exist.</string>
-			<key>type</key>
-			<string>Missing Content</string>
-		</dict>
-		<dict>
-			<key>affected-items</key>
-			<array>
-				<string>./AppIcon.appiconset/[][iphone][20x20][][][3x][][][]</string>
-			</array>
-			<key>catalog</key>
-			<string>/Users/oldmash/RiderProjects/labsC#/CSlab14ClientTelitsynIvan/CSlab13/CSlab13.iOS/obj/iPhoneSimulator/Debug/actool/cloned-assets/Assets.xcassets</string>
-			<key>message</key>
-			<string>The file "Icon60.png" for the image set "AppIcon" does not exist.</string>
-			<key>type</key>
-			<string>Missing Content</string>
-		</dict>
-		<dict>
-			<key>affected-items</key>
-			<array>
-				<string>./AppIcon.appiconset/[][iphone][29x29][][][2x][][][]</string>
-			</array>
-			<key>catalog</key>
-			<string>/Users/oldmash/RiderProjects/labsC#/CSlab14ClientTelitsynIvan/CSlab13/CSlab13.iOS/obj/iPhoneSimulator/Debug/actool/cloned-assets/Assets.xcassets</string>
-			<key>message</key>
-			<string>The file "Icon58.png" for the image set "AppIcon" does not exist.</string>
-			<key>type</key>
-			<string>Missing Content</string>
-		</dict>
-		<dict>
-			<key>affected-items</key>
-			<array>
-				<string>./AppIcon.appiconset/[][iphone][29x29][][][3x][][][]</string>
-			</array>
-			<key>catalog</key>
-			<string>/Users/oldmash/RiderProjects/labsC#/CSlab14ClientTelitsynIvan/CSlab13/CSlab13.iOS/obj/iPhoneSimulator/Debug/actool/cloned-assets/Assets.xcassets</string>
-			<key>message</key>
-			<string>The file "Icon87.png" for the image set "AppIcon" does not exist.</string>
-			<key>type</key>
-			<string>Missing Content</string>
-		</dict>
-		<dict>
-			<key>affected-items</key>
-			<array>
-				<string>./AppIcon.appiconset/[][iphone][40x40][][][2x][][][]</string>
-			</array>
-			<key>catalog</key>
-			<string>/Users/oldmash/RiderProjects/labsC#/CSlab14ClientTelitsynIvan/CSlab13/CSlab13.iOS/obj/iPhoneSimulator/Debug/actool/cloned-assets/Assets.xcassets</string>
-			<key>message</key>
-			<string>The file "Icon80.png" for the image set "AppIcon" does not exist.</string>
-			<key>type</key>
-			<string>Missing Content</string>
-		</dict>
-		<dict>
-			<key>affected-items</key>
-			<array>
 				<string>./AppIcon.appiconset/[][iphone][40x40][][][3x][][][]</string>
 			</array>
 			<key>catalog</key>
-			<string>/Users/oldmash/RiderProjects/labsC#/CSlab14ClientTelitsynIvan/CSlab13/CSlab13.iOS/obj/iPhoneSimulator/Debug/actool/cloned-assets/Assets.xcassets</string>
+			<string>/Users/oldmash/RiderProjects/labsC#/DimaClient/CSlab13/CSlab13.iOS/obj/iPhoneSimulator/Debug/actool/cloned-assets/Assets.xcassets</string>
 			<key>message</key>
 			<string>The file "Icon120.png" for the image set "AppIcon" does not exist.</string>
 			<key>type</key>
@@ -197,7 +29,7 @@
 				<string>./AppIcon.appiconset/[][iphone][60x60][][][2x][][][]</string>
 			</array>
 			<key>catalog</key>
-			<string>/Users/oldmash/RiderProjects/labsC#/CSlab14ClientTelitsynIvan/CSlab13/CSlab13.iOS/obj/iPhoneSimulator/Debug/actool/cloned-assets/Assets.xcassets</string>
+			<string>/Users/oldmash/RiderProjects/labsC#/DimaClient/CSlab13/CSlab13.iOS/obj/iPhoneSimulator/Debug/actool/cloned-assets/Assets.xcassets</string>
 			<key>message</key>
 			<string>The file "Icon120.png" for the image set "AppIcon" does not exist.</string>
 			<key>type</key>
@@ -209,7 +41,7 @@
 				<string>./AppIcon.appiconset/[][iphone][60x60][][][3x][][][]</string>
 			</array>
 			<key>catalog</key>
-			<string>/Users/oldmash/RiderProjects/labsC#/CSlab14ClientTelitsynIvan/CSlab13/CSlab13.iOS/obj/iPhoneSimulator/Debug/actool/cloned-assets/Assets.xcassets</string>
+			<string>/Users/oldmash/RiderProjects/labsC#/DimaClient/CSlab13/CSlab13.iOS/obj/iPhoneSimulator/Debug/actool/cloned-assets/Assets.xcassets</string>
 			<key>message</key>
 			<string>The file "Icon180.png" for the image set "AppIcon" does not exist.</string>
 			<key>type</key>
@@ -221,9 +53,177 @@
 				<string>./AppIcon.appiconset/[][ipad][20x20][][][1x][][][]</string>
 			</array>
 			<key>catalog</key>
-			<string>/Users/oldmash/RiderProjects/labsC#/CSlab14ClientTelitsynIvan/CSlab13/CSlab13.iOS/obj/iPhoneSimulator/Debug/actool/cloned-assets/Assets.xcassets</string>
+			<string>/Users/oldmash/RiderProjects/labsC#/DimaClient/CSlab13/CSlab13.iOS/obj/iPhoneSimulator/Debug/actool/cloned-assets/Assets.xcassets</string>
 			<key>message</key>
 			<string>The file "Icon20.png" for the image set "AppIcon" does not exist.</string>
+			<key>type</key>
+			<string>Missing Content</string>
+		</dict>
+		<dict>
+			<key>affected-items</key>
+			<array>
+				<string>./AppIcon.appiconset/[][ipad][20x20][][][2x][][][]</string>
+			</array>
+			<key>catalog</key>
+			<string>/Users/oldmash/RiderProjects/labsC#/DimaClient/CSlab13/CSlab13.iOS/obj/iPhoneSimulator/Debug/actool/cloned-assets/Assets.xcassets</string>
+			<key>message</key>
+			<string>The file "Icon40.png" for the image set "AppIcon" does not exist.</string>
+			<key>type</key>
+			<string>Missing Content</string>
+		</dict>
+		<dict>
+			<key>affected-items</key>
+			<array>
+				<string>./AppIcon.appiconset/[][iphone][20x20][][][3x][][][]</string>
+			</array>
+			<key>catalog</key>
+			<string>/Users/oldmash/RiderProjects/labsC#/DimaClient/CSlab13/CSlab13.iOS/obj/iPhoneSimulator/Debug/actool/cloned-assets/Assets.xcassets</string>
+			<key>message</key>
+			<string>The file "Icon60.png" for the image set "AppIcon" does not exist.</string>
+			<key>type</key>
+			<string>Missing Content</string>
+		</dict>
+		<dict>
+			<key>affected-items</key>
+			<array>
+				<string>./AppIcon.appiconset/[][ipad][29x29][][][1x][][][]</string>
+			</array>
+			<key>catalog</key>
+			<string>/Users/oldmash/RiderProjects/labsC#/DimaClient/CSlab13/CSlab13.iOS/obj/iPhoneSimulator/Debug/actool/cloned-assets/Assets.xcassets</string>
+			<key>message</key>
+			<string>The file "Icon29.png" for the image set "AppIcon" does not exist.</string>
+			<key>type</key>
+			<string>Missing Content</string>
+		</dict>
+		<dict>
+			<key>affected-items</key>
+			<array>
+				<string>./AppIcon.appiconset/[][ipad][29x29][][][2x][][][]</string>
+			</array>
+			<key>catalog</key>
+			<string>/Users/oldmash/RiderProjects/labsC#/DimaClient/CSlab13/CSlab13.iOS/obj/iPhoneSimulator/Debug/actool/cloned-assets/Assets.xcassets</string>
+			<key>message</key>
+			<string>The file "Icon58.png" for the image set "AppIcon" does not exist.</string>
+			<key>type</key>
+			<string>Missing Content</string>
+		</dict>
+		<dict>
+			<key>affected-items</key>
+			<array>
+				<string>./AppIcon.appiconset/[][ipad][40x40][][][1x][][][]</string>
+			</array>
+			<key>catalog</key>
+			<string>/Users/oldmash/RiderProjects/labsC#/DimaClient/CSlab13/CSlab13.iOS/obj/iPhoneSimulator/Debug/actool/cloned-assets/Assets.xcassets</string>
+			<key>message</key>
+			<string>The file "Icon40.png" for the image set "AppIcon" does not exist.</string>
+			<key>type</key>
+			<string>Missing Content</string>
+		</dict>
+		<dict>
+			<key>affected-items</key>
+			<array>
+				<string>./AppIcon.appiconset/[][iphone][20x20][][][2x][][][]</string>
+			</array>
+			<key>catalog</key>
+			<string>/Users/oldmash/RiderProjects/labsC#/DimaClient/CSlab13/CSlab13.iOS/obj/iPhoneSimulator/Debug/actool/cloned-assets/Assets.xcassets</string>
+			<key>message</key>
+			<string>The file "Icon40.png" for the image set "AppIcon" does not exist.</string>
+			<key>type</key>
+			<string>Missing Content</string>
+		</dict>
+		<dict>
+			<key>affected-items</key>
+			<array>
+				<string>./AppIcon.appiconset/[][iphone][29x29][][][2x][][][]</string>
+			</array>
+			<key>catalog</key>
+			<string>/Users/oldmash/RiderProjects/labsC#/DimaClient/CSlab13/CSlab13.iOS/obj/iPhoneSimulator/Debug/actool/cloned-assets/Assets.xcassets</string>
+			<key>message</key>
+			<string>The file "Icon58.png" for the image set "AppIcon" does not exist.</string>
+			<key>type</key>
+			<string>Missing Content</string>
+		</dict>
+		<dict>
+			<key>affected-items</key>
+			<array>
+				<string>./AppIcon.appiconset/[][ipad][40x40][][][2x][][][]</string>
+			</array>
+			<key>catalog</key>
+			<string>/Users/oldmash/RiderProjects/labsC#/DimaClient/CSlab13/CSlab13.iOS/obj/iPhoneSimulator/Debug/actool/cloned-assets/Assets.xcassets</string>
+			<key>message</key>
+			<string>The file "Icon80.png" for the image set "AppIcon" does not exist.</string>
+			<key>type</key>
+			<string>Missing Content</string>
+		</dict>
+		<dict>
+			<key>affected-items</key>
+			<array>
+				<string>./AppIcon.appiconset/[][ipad][76x76][][][1x][][][]</string>
+			</array>
+			<key>catalog</key>
+			<string>/Users/oldmash/RiderProjects/labsC#/DimaClient/CSlab13/CSlab13.iOS/obj/iPhoneSimulator/Debug/actool/cloned-assets/Assets.xcassets</string>
+			<key>message</key>
+			<string>The file "Icon76.png" for the image set "AppIcon" does not exist.</string>
+			<key>type</key>
+			<string>Missing Content</string>
+		</dict>
+		<dict>
+			<key>affected-items</key>
+			<array>
+				<string>./AppIcon.appiconset/[][ipad][76x76][][][2x][][][]</string>
+			</array>
+			<key>catalog</key>
+			<string>/Users/oldmash/RiderProjects/labsC#/DimaClient/CSlab13/CSlab13.iOS/obj/iPhoneSimulator/Debug/actool/cloned-assets/Assets.xcassets</string>
+			<key>message</key>
+			<string>The file "Icon152.png" for the image set "AppIcon" does not exist.</string>
+			<key>type</key>
+			<string>Missing Content</string>
+		</dict>
+		<dict>
+			<key>affected-items</key>
+			<array>
+				<string>./AppIcon.appiconset/[][ipad][83.5x83.5][][][2x][][][]</string>
+			</array>
+			<key>catalog</key>
+			<string>/Users/oldmash/RiderProjects/labsC#/DimaClient/CSlab13/CSlab13.iOS/obj/iPhoneSimulator/Debug/actool/cloned-assets/Assets.xcassets</string>
+			<key>message</key>
+			<string>The file "Icon167.png" for the image set "AppIcon" does not exist.</string>
+			<key>type</key>
+			<string>Missing Content</string>
+		</dict>
+		<dict>
+			<key>affected-items</key>
+			<array>
+				<string>./AppIcon.appiconset/[][ios-marketing][1024x1024][][][1x][][][]</string>
+			</array>
+			<key>catalog</key>
+			<string>/Users/oldmash/RiderProjects/labsC#/DimaClient/CSlab13/CSlab13.iOS/obj/iPhoneSimulator/Debug/actool/cloned-assets/Assets.xcassets</string>
+			<key>message</key>
+			<string>The file "Icon1024.png" for the image set "AppIcon" does not exist.</string>
+			<key>type</key>
+			<string>Missing Content</string>
+		</dict>
+		<dict>
+			<key>affected-items</key>
+			<array>
+				<string>./AppIcon.appiconset/[][iphone][29x29][][][3x][][][]</string>
+			</array>
+			<key>catalog</key>
+			<string>/Users/oldmash/RiderProjects/labsC#/DimaClient/CSlab13/CSlab13.iOS/obj/iPhoneSimulator/Debug/actool/cloned-assets/Assets.xcassets</string>
+			<key>message</key>
+			<string>The file "Icon87.png" for the image set "AppIcon" does not exist.</string>
+			<key>type</key>
+			<string>Missing Content</string>
+		</dict>
+		<dict>
+			<key>affected-items</key>
+			<array>
+				<string>./AppIcon.appiconset/[][iphone][40x40][][][2x][][][]</string>
+			</array>
+			<key>catalog</key>
+			<string>/Users/oldmash/RiderProjects/labsC#/DimaClient/CSlab13/CSlab13.iOS/obj/iPhoneSimulator/Debug/actool/cloned-assets/Assets.xcassets</string>
+			<key>message</key>
+			<string>The file "Icon80.png" for the image set "AppIcon" does not exist.</string>
 			<key>type</key>
 			<string>Missing Content</string>
 		</dict>

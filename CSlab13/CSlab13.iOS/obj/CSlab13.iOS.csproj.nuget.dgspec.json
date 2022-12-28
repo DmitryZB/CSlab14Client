@@ -1,21 +1,21 @@
 {
   "format": 1,
   "restore": {
-    "/Users/dimon/Desktop/PROGRAMMING/C#/lab14/CSlab13/CSlab13.iOS/CSlab13.iOS.csproj": {}
+    "/Users/oldmash/RiderProjects/labsC#/DimaClient/CSlab13/CSlab13.iOS/CSlab13.iOS.csproj": {}
   },
   "projects": {
-    "/Users/dimon/Desktop/PROGRAMMING/C#/lab14/CSlab13/CSlab13.iOS/CSlab13.iOS.csproj": {
+    "/Users/oldmash/RiderProjects/labsC#/DimaClient/CSlab13/CSlab13.iOS/CSlab13.iOS.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/dimon/Desktop/PROGRAMMING/C#/lab14/CSlab13/CSlab13.iOS/CSlab13.iOS.csproj",
+        "projectUniqueName": "/Users/oldmash/RiderProjects/labsC#/DimaClient/CSlab13/CSlab13.iOS/CSlab13.iOS.csproj",
         "projectName": "CSlab13.iOS.csproj",
-        "projectPath": "/Users/dimon/Desktop/PROGRAMMING/C#/lab14/CSlab13/CSlab13.iOS/CSlab13.iOS.csproj",
-        "packagesPath": "/Users/dimon/.nuget/packages/",
-        "outputPath": "/Users/dimon/Desktop/PROGRAMMING/C#/lab14/CSlab13/CSlab13.iOS/obj/",
+        "projectPath": "/Users/oldmash/RiderProjects/labsC#/DimaClient/CSlab13/CSlab13.iOS/CSlab13.iOS.csproj",
+        "packagesPath": "/Users/oldmash/.nuget/packages/",
+        "outputPath": "/Users/oldmash/RiderProjects/labsC#/DimaClient/CSlab13/CSlab13.iOS/obj/",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "configFilePaths": [
-          "/Users/dimon/.nuget/NuGet/NuGet.Config"
+          "/Users/oldmash/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "xamarinios10"
@@ -26,8 +26,8 @@
         "frameworks": {
           "xamarinios10": {
             "projectReferences": {
-              "/Users/dimon/Desktop/PROGRAMMING/C#/lab14/CSlab13/CSlab14/CSlab14.csproj": {
-                "projectPath": "/Users/dimon/Desktop/PROGRAMMING/C#/lab14/CSlab13/CSlab14/CSlab14.csproj"
+              "/Users/oldmash/RiderProjects/labsC#/DimaClient/CSlab13/CSlab14/CSlab14.csproj": {
+                "projectPath": "/Users/oldmash/RiderProjects/labsC#/DimaClient/CSlab13/CSlab14/CSlab14.csproj"
               }
             }
           }
@@ -59,17 +59,17 @@
         }
       }
     },
-    "/Users/dimon/Desktop/PROGRAMMING/C#/lab14/CSlab13/CSlab14/CSlab14.csproj": {
+    "/Users/oldmash/RiderProjects/labsC#/DimaClient/CSlab13/CSlab14/CSlab14.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/dimon/Desktop/PROGRAMMING/C#/lab14/CSlab13/CSlab14/CSlab14.csproj",
-        "projectName": "CSlab14",
-        "projectPath": "/Users/dimon/Desktop/PROGRAMMING/C#/lab14/CSlab13/CSlab14/CSlab14.csproj",
-        "packagesPath": "/Users/dimon/.nuget/packages/",
-        "outputPath": "/Users/dimon/Desktop/PROGRAMMING/C#/lab14/CSlab13/CSlab14/obj/",
+        "projectUniqueName": "/Users/oldmash/RiderProjects/labsC#/DimaClient/CSlab13/CSlab14/CSlab14.csproj",
+        "projectName": "CSlab13",
+        "projectPath": "/Users/oldmash/RiderProjects/labsC#/DimaClient/CSlab13/CSlab14/CSlab14.csproj",
+        "packagesPath": "/Users/oldmash/.nuget/packages/",
+        "outputPath": "/Users/oldmash/RiderProjects/labsC#/DimaClient/CSlab13/CSlab14/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/dimon/.nuget/NuGet/NuGet.Config"
+          "/Users/oldmash/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.0"

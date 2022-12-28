@@ -1837,7 +1837,7 @@
           "buildTransitive/monoandroid50/Xamarin.Google.Guava.ListenableFuture.targets": {}
         }
       },
-      "CSlab14/1.0.0": {
+      "CSlab13/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
@@ -1849,10 +1849,10 @@
           "Xamarin.Forms": "5.0.0.2012"
         },
         "compile": {
-          "bin/placeholder/CSlab14.dll": {}
+          "bin/placeholder/CSlab13.dll": {}
         },
         "runtime": {
-          "bin/placeholder/CSlab14.dll": {}
+          "bin/placeholder/CSlab13.dll": {}
         }
       }
     }
@@ -4512,7 +4512,7 @@
         "xamarin.google.guava.listenablefuture.nuspec"
       ]
     },
-    "CSlab14/1.0.0": {
+    "CSlab13/1.0.0": {
       "type": "project",
       "path": "../CSlab14/CSlab14.csproj",
       "msbuildProject": "../CSlab14/CSlab14.csproj"
@@ -4520,26 +4520,26 @@
   },
   "projectFileDependencyGroups": {
     "MonoAndroid,Version=v12.0": [
-      "CSlab14 >= 1.0.0",
+      "CSlab13 >= 1.0.0",
       "Newtonsoft.Json >= 13.0.2",
       "Xamarin.Forms >= 5.0.0.2012"
     ]
   },
   "packageFolders": {
-    "/Users/dimon/.nuget/packages/": {}
+    "/Users/oldmash/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/dimon/Desktop/PROGRAMMING/C#/lab14/CSlab13/CSlab13.Droid/CSlab13.Droid.csproj",
+      "projectUniqueName": "/Users/oldmash/RiderProjects/labsC#/DimaClient/CSlab13/CSlab13.Droid/CSlab13.Droid.csproj",
       "projectName": "CSlab13.Droid.csproj",
-      "projectPath": "/Users/dimon/Desktop/PROGRAMMING/C#/lab14/CSlab13/CSlab13.Droid/CSlab13.Droid.csproj",
-      "packagesPath": "/Users/dimon/.nuget/packages/",
-      "outputPath": "/Users/dimon/Desktop/PROGRAMMING/C#/lab14/CSlab13/CSlab13.Droid/obj/",
+      "projectPath": "/Users/oldmash/RiderProjects/labsC#/DimaClient/CSlab13/CSlab13.Droid/CSlab13.Droid.csproj",
+      "packagesPath": "/Users/oldmash/.nuget/packages/",
+      "outputPath": "/Users/oldmash/RiderProjects/labsC#/DimaClient/CSlab13/CSlab13.Droid/obj/",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
-        "/Users/dimon/.nuget/NuGet/NuGet.Config"
+        "/Users/oldmash/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "monoandroid12.0"
@@ -4550,8 +4550,8 @@
       "frameworks": {
         "monoandroid12.0": {
           "projectReferences": {
-            "/Users/dimon/Desktop/PROGRAMMING/C#/lab14/CSlab13/CSlab14/CSlab14.csproj": {
-              "projectPath": "/Users/dimon/Desktop/PROGRAMMING/C#/lab14/CSlab13/CSlab14/CSlab14.csproj"
+            "/Users/oldmash/RiderProjects/labsC#/DimaClient/CSlab13/CSlab14/CSlab14.csproj": {
+              "projectPath": "/Users/oldmash/RiderProjects/labsC#/DimaClient/CSlab13/CSlab14/CSlab14.csproj"
             }
           }
         }

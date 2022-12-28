@@ -7,9 +7,9 @@
       <dSYMSourcePathExists>false</dSYMSourcePathExists>
       <NoSymbolStrip>true</NoSymbolStrip>
       <dSYMInfoPlistRelativePath>CSlab13.iOS.app.dSYM\Contents\Info.plist</dSYMInfoPlistRelativePath>
-      <SymbolFile>/Users/oldmash/RiderProjects/labsC#/CSlab14ClientTelitsynIvan/CSlab13/CSlab13.iOS/obj/iPhoneSimulator/Debug/mtouch-symbols.list</SymbolFile>
+      <SymbolFile>/Users/oldmash/RiderProjects/labsC#/DimaClient/CSlab13/CSlab13.iOS/obj/iPhoneSimulator/Debug/mtouch-symbols.list</SymbolFile>
       <DSymName>CSlab13.iOS.app.dSYM</DSymName>
-      <SourceProjectPath>/Users/oldmash/RiderProjects/labsC#/CSlab14ClientTelitsynIvan/CSlab13/CSlab13.iOS</SourceProjectPath>
+      <SourceProjectPath>/Users/oldmash/RiderProjects/labsC#/DimaClient/CSlab13/CSlab13.iOS</SourceProjectPath>
     </_PostProcessingItem>
   </ItemGroup>
 </Project>

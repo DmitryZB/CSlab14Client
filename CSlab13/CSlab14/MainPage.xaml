@@ -1,14 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-            xmlns:local="clr-namespace:CSlab13;assembly=CSlab14"
+            xmlns:cSlab13="clr-namespace:CSlab13;assembly=CSlab13"
             x:Class="CSlab13.MainPage" 
             BarBackgroundColor="Gray"
             SelectedTabColor="DimGray"
             UnselectedTabColor="DarkGray"
             Title="ИП Димасик">
     <TabbedPage.Children>
-        <local:ListTaxiDepotsPage />
-        <local:ListCarsPage/>
+        <cSlab13:ListTaxiDepotsPage />
+        <cSlab13:ListCarsPage/>
     </TabbedPage.Children>
 </TabbedPage>

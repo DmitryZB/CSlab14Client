@@ -29,7 +29,7 @@
                                                  Margin="20,0,20,0">
                                         <Label Text="{Binding Car.Name}" 
                                                FontSize="Medium" />
-                                        <Label Text="{Binding SitCounter}" 
+                                        <Label Text="{Binding Quantity}" 
                                                FontSize="Medium" />
                                     </StackLayout>
                                 </StackLayout>

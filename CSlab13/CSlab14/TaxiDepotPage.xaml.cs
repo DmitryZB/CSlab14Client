@@ -118,8 +118,8 @@ namespace CSlab13
                 Quantity = Int32.Parse(quantity),
                 Car = car,
                 CarId = car.Id,
-                // TaxiDepot = taxidepot,
-                // TaxiDepotId = taxidepot.Id
+                TaxiDepot = taxidepot,
+                TaxiDepotId = taxidepot.Id
             };
             taxidepot.TaxiGroups.Add(temp);
             ListTaxiGroupsInTaxiDepot.ItemsSource = taxidepot.TaxiGroups;
